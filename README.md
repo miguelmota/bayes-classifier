@@ -4,6 +4,12 @@ This is a [Naive Bayes classifier](http://en.wikipedia.org/wiki/Naive_Bayes_clas
 
 I took out the relevant algorithms from the [appratus](https://github.com/NaturalNode/apparatus) and [natural](https://github.com/NaturalNode/natural) node modules, and also the [Porter stemmer](https://github.com/NaturalNode/natural/tree/master/lib/natural/stemmers) algorithm. All credit goes to them.
 
+# Install
+
+```bash
+npm install bayes-classifier
+```
+
 # Usage
 
 ```javascript
