@@ -10,6 +10,10 @@ I took out the relevant algorithms from the [appratus](https://github.com/Natura
 npm install bayes-classifier
 ```
 
+```bash
+bower install bayes-classifier
+```
+
 # Usage
 
 ```javascript
@@ -39,8 +43,25 @@ console.log(classifier.classify('I heard the mexican restaurant is great!')); //
 console.log(classifier.classify('I don\'t want to eat there again.')); // "negative"
 console.log(classifier.classify('The torta is epicly bad.')); // "negative"
 console.log(classifier.classify('The torta is horribly awesome.')); // "positive"
+
+console.log(classifier.getClassifications('Burritos are the meaning of life.'));
+/*
+ [ { label: 'positive', value: 0.22222222222222224 },
+   { label: 'negative', value: 0.11111111111111112 } ]
+*/
 ```
 
+# API
+
+### classifier.addDocument(doc, class);
+
+### classifier.addDocuments([docs], class);
+
+### classifier.train();
+
+### classifier.classify(doc)
+
+### classifier.getClassifications(doc)
 
 # License
 
