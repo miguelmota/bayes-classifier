@@ -53,15 +53,15 @@ console.log(classifier.getClassifications('Burritos are the meaning of life.'));
 
 # API
 
-### classifier.addDocument(doc, class);
+#### classifier.addDocument(doc, class);
 
-### classifier.addDocuments([docs], class);
+#### classifier.addDocuments([docs], class);
 
-### classifier.train();
+#### classifier.train();
 
-### classifier.classify(doc)
+#### classifier.classify(doc)
 
-### classifier.getClassifications(doc)
+#### classifier.getClassifications(doc)
 
 # License
 
