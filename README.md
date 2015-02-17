@@ -4,6 +4,10 @@ This is a [Naive Bayes classifier](http://en.wikipedia.org/wiki/Naive_Bayes_clas
 
 I took out the relevant algorithms from the [appratus](https://github.com/NaturalNode/apparatus) and [natural](https://github.com/NaturalNode/natural) modules, and also the [Porter stemmer](https://github.com/NaturalNode/natural/tree/master/lib/natural/stemmers) algorithm. All credit goes to them.
 
+# Demo
+
+[http://lab.moogs.io/bayes-classifier](http://lab.moogs.io/bayes-classifier)
+
 # Install
 
 ```bash
