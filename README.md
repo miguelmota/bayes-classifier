@@ -6,7 +6,7 @@ I took out the relevant algorithms from the [appratus](https://github.com/Natura
 
 # Demo
 
-[http://lab.moogs.io/bayes-classifier](http://lab.moogs.io/bayes-classifier)
+[https://lab.miguelmota.com/bayes-classifier](https://lab.miguelmota.com/bayes-classifier)
 
 # Install
 
