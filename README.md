@@ -53,7 +53,15 @@ console.log(classifier.getClassifications('Burritos are the meaning of life.'));
  [ { label: 'positive', value: 0.22222222222222224 },
    { label: 'negative', value: 0.11111111111111112 } ]
 */
+
+// Restore
+var mySavedClassifierObject = // load from fs or db etc...
+
+var classifier = new BayesClassifier();
+classifier.restore(mySavedClassifierObject);
+console.log(classifier.classify('I don\'t want to eat there again.')); // "negative"
 ```
+
 
 # API
 
@@ -66,6 +74,8 @@ console.log(classifier.getClassifications('Burritos are the meaning of life.'));
 #### classifier.classify(doc)
 
 #### classifier.getClassifications(doc)
+
+#### classifier.restore(classifier)
 
 # License
 
