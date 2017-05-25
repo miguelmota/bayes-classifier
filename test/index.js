@@ -1,9 +1,10 @@
+var fs = require('fs')
 var test = require('tape')
 
 var BayesClassifier = require('../index')
 
 test(function(t) {
-  t.plan(4)
+  t.plan(5)
 
   var classifier = new BayesClassifier()
 
@@ -32,4 +33,16 @@ test(function(t) {
   t.equal(classifier.classify(`The torta is horribly awesome.`), 'positive')
 
   //console.log(classifier.getClassifications('Burritos are the meaning of life.'));
+
+  var storeFile = `${__dirname}/store.json`
+
+  fs.writeFileSync(storeFile, JSON.stringify(classifier))
+
+  var savedClassifierObject = require(storeFile)
+
+  var restoredClassifier = new BayesClassifier()
+  restoredClassifier.restore(savedClassifierObject)
+  t.equal(restoredClassifier.classify(`I don't want to eat there again.`), 'negative')
+
+
 })
