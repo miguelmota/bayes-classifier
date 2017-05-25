@@ -46,7 +46,7 @@ classifier.train()
 console.log(classifier.classify(`I heard the mexican restaurant is great!`)) // "positive"
 console.log(classifier.classify(`I don't want to eat there again.`)) // "negative"
 console.log(classifier.classify(`The torta is epicly bad.`)) // "negative"
-console.log(classifier.classify(`The torta is horribly awesome.`)) // "positive"
+console.log(classifier.classify(`The torta is tasty.`)) // "positive"
 
 console.log(classifier.getClassifications(`Burritos are the meaning of life.`))
 /*

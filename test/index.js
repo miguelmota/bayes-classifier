@@ -30,7 +30,7 @@ test(function(t) {
   t.equal(classifier.classify(`I heard the mexican restaurant is great!`), 'positive')
   t.equal(classifier.classify(`I don't want to eat there again.`), 'negative')
   t.equal(classifier.classify(`The torta is epicly bad.`), 'negative')
-  t.equal(classifier.classify(`The torta is horribly awesome.`), 'positive')
+  t.equal(classifier.classify(`The torta is tasty`), 'positive')
 
   //console.log(classifier.getClassifications('Burritos are the meaning of life.'));
 
